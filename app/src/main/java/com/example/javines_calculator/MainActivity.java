@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnModulo.setOnClickListener(this);
 
     }
+
     @Override
     public void onClick(View v) {
         //variable text boxes
@@ -57,42 +58,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         var2 = Double.parseDouble(txtVar2.getText().toString());
 
 
-
-
-
         switch(v.getId()){
             case R.id.btnAdd:
                 txtAns.setText(Double.toString(var1 + var2));
-
 
                 break;
             case R.id.btnSub:
                 txtAns.setText(Double.toString(var1 - var2));
 
-
                 break;
             case R.id.btnMulti:
                 txtAns.setText(Double.toString(var1 * var2));
-
 
                 break;
             case R.id.btnDivide:
                 txtAns.setText(Double.toString(var1 / var2));
 
-
                 break;
             case R.id.btnModulo:
                 txtAns.setText(Double.toString(var1 % var2));
 
-
                 break;
 
         }
-
-
-
-
-
 
     }
 

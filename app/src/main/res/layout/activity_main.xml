@@ -36,9 +36,10 @@
         android:text="First Variable"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintHorizontal_bias="0.45"
         app:layout_constraintStart_toStartOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintVertical_bias="0.049" />
 
     <EditText
         android:id="@+id/txtVariable1"
@@ -71,52 +72,61 @@
         android:id="@+id/btnAdd"
         android:layout_width="63dp"
         android:layout_height="48dp"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="40dp"
         android:text="+"
-        app:layout_constraintEnd_toStartOf="@+id/btnSub"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtVariable2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtVariable2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnSub"
         android:layout_width="63dp"
         android:layout_height="48dp"
+        android:layout_marginTop="40dp"
         android:text="-"
-        app:layout_constraintEnd_toStartOf="@+id/btnMulti"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnAdd"
-        app:layout_constraintTop_toTopOf="@+id/btnAdd" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.29"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAdd" />
 
     <Button
         android:id="@+id/btnMulti"
         android:layout_width="63dp"
         android:layout_height="48dp"
+        android:layout_marginStart="40dp"
         android:text="x"
-        app:layout_constraintEnd_toStartOf="@+id/btnDivide"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnSub"
-        app:layout_constraintTop_toTopOf="@+id/btnSub" />
+        app:layout_constraintBottom_toBottomOf="@+id/btnDivide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.373"
+        app:layout_constraintStart_toEndOf="@+id/btnDivide" />
 
     <Button
         android:id="@+id/btnDivide"
         android:layout_width="63dp"
         android:layout_height="48dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="40dp"
         android:text="/"
+        app:layout_constraintBottom_toBottomOf="@+id/btnAdd"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnMulti"
-        app:layout_constraintTop_toTopOf="@+id/btnMulti" />
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd"
+        app:layout_constraintTop_toBottomOf="@+id/txtVariable2"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnModulo"
-        android:layout_width="143dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="76dp"
+        android:layout_width="67dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="80dp"
         android:text="%"
+        app:layout_constraintBottom_toBottomOf="@+id/btnSub"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnDivide" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnSub" />
 
     <TextView
         android:id="@+id/textView8"
@@ -125,23 +135,22 @@
         android:text="The Result is"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.35"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.801" />
 
     <TextView
         android:id="@+id/txtAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
         android:text="answer"
-        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.648"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView8"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.49" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
