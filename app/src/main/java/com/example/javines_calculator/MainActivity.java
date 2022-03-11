@@ -45,7 +45,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnMulti.setOnClickListener(this);
         btnDivide.setOnClickListener(this);
         btnModulo.setOnClickListener(this);
-
     }
 
     @Override
@@ -83,6 +82,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
     }
+    //Methods
+
+
+
 
 
 }
