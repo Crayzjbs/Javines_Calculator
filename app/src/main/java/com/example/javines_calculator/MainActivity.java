@@ -28,11 +28,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //calling process
         //declarations
 
-        Button btnAdd = findViewById(R.id.btnAdd);
-        Button btnSubtract = findViewById(R.id.btnSubtract);
-        Button btnMultiply = findViewById(R.id.btnMultiply);
-        Button btnDivide = findViewById(R.id.btnDivide);
-        Button btnModulo = findViewById(R.id.btnModulo);
+       btnAdd = findViewById(R.id.btnAdd);
+       btnSubtract = findViewById(R.id.btnSubtract);
+       btnMultiply = findViewById(R.id.btnMultiply);
+       btnDivide = findViewById(R.id.btnDivide);
+       btnModulo = findViewById(R.id.btnModulo);
 
         //to make the button work (listener)
         btnAdd.setOnClickListener(this);
